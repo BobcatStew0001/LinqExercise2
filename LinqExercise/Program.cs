@@ -58,8 +58,8 @@ namespace LinqExercise
 
             Console.WriteLine("--Print 4--");
             //TODO: Order numbers in any order (ascending or desc) but only print 4 of them **foreach loop only!**
-            var numbersDescending2 = numbers.Where(x => x < 4);
-            foreach (var number in numbersDescending2)
+            var printFour = numbers.Take(4); 
+            foreach (var number in printFour)
             {
                 Console.WriteLine(number);
             }
